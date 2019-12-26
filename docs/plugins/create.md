@@ -1,42 +1,42 @@
-# Create and publish a plugin
+# 创建和发布插件
 
-A GitBook plugin is a node package published on NPM that follow a defined convention.
+GBook插件是在NPM上发布的遵循定义的约定的节点包。
 
-## Structure
+## 结构
 
 #### package.json
 
-The `package.json` is a manifest format for describing **Node.js modules**. GitBook plugins are built on top of Node modules. It declares dependencies, version, ownership, and other information required to run a plugin in GitBook. This document describes the schema in detail.
+`package.json` 是用于描述 **Node.js模块** 的清单格式。GBook插件构建在节点模块之上。它声明了在GBook中运行插件所需的依赖项、版本、所有权和其他信息。本文档详细描述了架构。
 
-A plugin manifest `package.json` can also contain details about the required configuration. The configuration schema is defined in the `gitbook` field of the `package.json` (This field follow the [JSON-Schema](http://json-schema.org) guidelines):
+插件清单 `package.json` 还可以包含有关所需配置的详细信息。配置模式在 `package.json` 的 `gbook` 字段中定义（此字段遵循 [JSON-Schema](http://json-schema.org) 准则）：
 
 ```js
 {
-    "name": "gitbook-plugin-mytest",
+    "name": "gbook-plugin-mytest",
     "version": "0.0.1",
-    "description": "This is my first GitBook plugin",
+    "description": "这是我的第一个GBook插件",
     "engines": {
-        "gitbook": ">1.x.x"
+        "gbook": ">1.x.x"
     },
-    "gitbook": {
+    "gbook": {
         "properties": {
             "myConfigKey": {
                 "type": "string",
-                "default": "it's the default value",
-                "description": "It defines my awesome config!"
+                "default": "这是默认值",
+                "description": "它定义了我很棒的配置！"
             }
         }
     }
 }
 ```
 
-You can learn more about `package.json` from the [NPM documentation](https://docs.npmjs.com/files/package.json).
+您可以从[NPM文档](https://docs.npmjs.com/files/package.json)了解更多关于 `package.json` 的信息。
 
-The **package name** must begin with `gitbook-plugin-` and the **package engines** should contains `gitbook`.
+这个 **package name** 必须以 `gbook-plugin-` 开头， 并且 **package engines** 应该包含 `gbook` 字段
 
 #### index.js
 
-The `index.js` is main entry point of your plugin runtime:
+The `index.js` 是插件运行时的主要入口点:
 
 ```js
 module.exports = {
@@ -51,19 +51,20 @@ module.exports = {
 };
 ```
 
-## Publish your plugin
+## 发布你的插件
 
-GitBook plugins can be published on [NPM](https://www.npmjs.com).
+GBook插件可以在 [NPM](https://www.npmjs.com) 上发布。
 
 To publish a new plugin, you need to create an account on [npmjs.com](https://www.npmjs.com) then publish it from the command line:
+要发布新插件，您需要在 [npmjs.com](https://www.npmjs.com) 上创建一个帐户，然后从命令行发布它：
 
 ```
 $ npm publish
 ```
 
-## Private plugins
+## 私有插件
 
-Private plugins can be hosted on GitHub and included using `git` urls:
+私有插件可以托管在GitHub上，并使用 `git` url导入：
 
 ```
 {
