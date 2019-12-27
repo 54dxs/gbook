@@ -1,18 +1,17 @@
-# Builtin Templating Helpers
+# 内置模板助手
 
-GitBook provides a serie of builtin filters and blocks to help you write templates.
+GBook提供了一系列内置过滤器和块来帮助您编写模板。
 
 ### Filters
 
-`value|default(default, [boolean])`If value is strictly undefined, return default, otherwise value. If boolean is true, any JavaScript falsy value will return default (false, "", etc)
+`value|default(default, [boolean])`如果值严格未定义，则返回默认值，否则返回值。如果boolean为true，任何JavaScript falsy值都将返回默认值(false, "", etc)
 
-`arr|sort(reverse, caseSens, attr)`
-Sort arr with JavaScript's arr.sort function. If reverse is true, result will be reversed. Sort is case-insensitive by default, but setting caseSens to true makes it case-sensitive. If attr is passed, will compare attr from each item.
+`arr|sort(reverse, caseSens, attr)`使用JavaScript的arr.Sort函数对arr进行排序。如果reverse为true，则结果将被反转。Sort默认不区分大小写，但将caseSens设置为true会使其区分大小写。如果传递attr，将比较每个项目的attr。
 
 ### Blocks
 
 `{% markdown %}Markdown string{% endmarkdown %}`
-Render inline markdown
+渲染内联Markdown
 
 `{% asciidoc %}AsciiDoc string{% endasciidoc %}`
-Render inline asciidoc
+呈现内联AsciiDoc
