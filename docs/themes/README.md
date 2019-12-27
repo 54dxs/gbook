@@ -1,4 +1,4 @@
-# 主题化
+# 主题
 
 从3.0.0版本开始，GBook可以很容易地设置主题。默认情况下，书籍使用[主题默认值](https://github.com/54dxs/gbook-plugin-theme-default)主题。
 
