@@ -1,8 +1,5 @@
 # 目录结构
 
-GitBook uses a simple directory structure. All Markdown/Asciidoc files listed in the [SUMMARY](pages.md) will be transformed as HTML. Multi-Lingual books have a slightly [different structure](languages.md).
-
-A basic GitBook usually looks something like this:
 GBook使用一个简单的目录结构。[摘要](pages.md)中列出的所有 Markdown/Asciidoc 文件都将转换为HTML。多语种书籍有一个稍微[不同结构](languages.md)。
 
 基本的GBook通常如下所示：
