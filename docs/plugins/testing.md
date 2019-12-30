@@ -1,22 +1,21 @@
-# Testing your plugin
+# 测试你的插件
 
-### Testing your plugin locally
+### 在本地测试插件
 
-Testing your plugin on your book before publishing it is possible using [npm link](https://docs.npmjs.com/cli/link).
+在发布之前，可以使用[npm link](https://docs.npmjs.com/cli/link)在书上测试插件。
 
-In the plugin's folder, run:
+在插件的文件夹中，运行：
 
 ```
 $ npm link
 ```
 
-Then in your book's folder:
+然后在你book的文件夹中：
 
 ```
-$ npm link gitbook-plugin-<plugin's name>
+$ npm link gbook-plugin-<plugin's name>
 ```
 
-### Unit testing on Travis
+### Travis的单元测试
 
-[gitbook-tester](https://github.com/todvora/gitbook-tester) makes it easy to write **Node.js/Mocha** unit tests for your plugins. Using [Travis.org](https://travis.org), tests can be run on each commits/tags.
-
+[gbook-tester](https://github.com/todvora/gbook-tester)使为插件编写**Node.js/Mocha**单元测试变得非常容易。使用[Travis.org](https://travis.org)，可以在每个commits/tags上运行测试。
