@@ -1,14 +1,14 @@
 # Glossary
 
-Allows you to specify terms and their respective definitions to be displayed as annotations. Based on those terms, GitBook will automatically build an index and highlight those terms in pages.
+允许您指定要显示为批注的术语及其各自的定义。基于这些术语，GBook将自动构建索引并在页面中突出显示这些术语。
 
-The `GLOSSARY.md` format is a list of `h2` headings, along with a description paragraph:
+`GLOSSARY.md`格式是一个`h2`标题列表，以及一个说明段落：
 
 ```markdown
-## Term
-Definition for this term
+## 术语
+本术语的定义
 
-## Another term
-With it's definition, this can contain bold text
-and all other kinds of inline markup ...
+## 另一个术语
+根据它的定义，它可以包含粗体文本
+以及所有其他类型的内联标记。。。
 ```
