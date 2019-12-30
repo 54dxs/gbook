@@ -1,22 +1,22 @@
-# GitBook FAQ
+# GBook常见问题解答
 
-This page gathers common questions and answers concerning the GitBook format and toolchain.
+此页面收集有关GBook格式和工具链的常见问题和答案。
 
-Questions about GitBook.com and the Editor are gather into the [help.gitbook.com's FAQ](http://help.gitbook.com/faq.html).
+关于gbook.54dxs.cn和编辑器的问题可以收集到[gbook.54dxs.cn/help的常见问题解答](https://gbook.54dxs.cn/help/faq.html)。
 
-#### How can I host/publish my book?
+#### 我怎样才能主持/出版我的书？
 
-Books can easily be published and hosted on [GitBook.com](https://www.gitbook.com). But GitBook output can be hosted on any static file hosting solution.
+图书可以很容易地在[gbook.54dxs.cn](https://gbook.54dxs.cn)上发布和托管。但是GBook输出可以托管在任何静态文件托管解决方案上。
 
-#### What can I use to edit my content?
+#### 我可以用什么来编辑我的内容？
 
-Any text editor should work! But we advise using the [GitBook Editor](https://www.gitbook.com/editor). [GitBook.com](https://www.gitbook.com) also provides a web version of this editor.
+任何文本编辑器都应该工作！但我们建议使用[GBook编辑器](https://gbook.54dxs.cn/editor)。[gbook.54dxs.cn](https://gbook.54dxs.cn)也提供了这个编辑器的web版本。
 
 ---
 
-#### Does GitBook supports RTL/bi-directional text ?
+#### GitBook是否支持RTL/双向文本？
 
-The GitBook format supports right to left, and bi-directional writing. To enable it, you either need to specify a language (ex: `ar`), or force GitBook to use RTL in your `book.json`:
+GBook格式支持从右向左和双向写入。要启用它，您需要指定一种语言（例如：`ar`），或者强制GBook在`book.json`中使用RTL：
 
 ``` json
 {
@@ -25,31 +25,32 @@ The GitBook format supports right to left, and bi-directional writing. To enable
 }
 ```
 
-With version 3.0 of GitBook, it's automatically detected according to the content.
-_Note that, while the output book will indeed respect RTL, the Editor doesn't support RTL writing yet_.
+在GBook的3.0版本中，它会根据内容自动检测。
 
-#### Should I use an `.html` or `.md` extensions in my links?
+_请注意，虽然输出手册确实会尊重RTL，但编辑器还不支持RTL编写。
 
-You should always use paths and the `.md` extensions when linking to your files, GitBook will automatically replace these paths by the appropriate link when the pointing file is referenced in the Table of Contents.
+#### 我应该在链接中使用`.html`或`.md`扩展名吗？
 
-#### Can I create a GitBook in a sub-directory of my repository?
+链接到文件时，应始终使用路径和`.md`扩展名，当目录中引用指向文件时，GBook将自动用相应的链接替换这些路径。
 
-Yes, GitBooks can be created in [sub-directories](structure.md#subdirectory). GitBook.com and the CLI also looks by default in a serie of [folders](structure.md).
+#### 我可以在存储库的子目录中创建GBook吗？
 
-#### Does GitBook supports RTL languages?
+是的，可以在[子目录](structure.md#subdirectory)中创建GBooks。默认情况下，gbook.54dxs.cn和CLI也以一系列[文件夹](structure.md)的形式出现。
 
-Yes, GitBook automatically detect the direction in your pages (`rtl` or `ltr`) and adjust the layout accordingly. The direction can also be specified globally in the [book.json](config.md).
+#### GBook支持RTL语言吗？
+
+是的，GBook会自动检测页面的方向（`rtl`或`ltr`），并相应地调整布局。方向也可以在[book.json](config.md)中全局指定。
 
 ---
 
-#### Does GitBook support Math equations?
+#### GBook支持数学公式吗？
 
-GitBook supports math equations and TeX thanks to plugins. There are currently 2 official plugins to display math: [mathjax](https://plugins.gitbook.com/plugin/mathjax) and [katex](https://plugins.gitbook.com/plugin/katex).
+GBook通过插件支持数学公式和TeX。目前有2个官方插件可以显示math:[mathjax](https://gbook.54dxs.cn/plugin/mathjax)和[katex](https://gbook.54dxs.cn/plugin/katex)。
 
-#### Can I customize/theme the output?
+#### 我可以定制输出吗？
 
-Yes, both the website and ebook outputs can be customized using [themes](themes/README.md).
+是的，网站和电子书输出都可以使用[主题](themes/README.md)定制。
 
-#### Can I add interactive content (videos, etc)?
+#### 我可以添加互动内容（视频等）吗？
 
-GitBook is very [extensible](plugins/README.md). You can use [existing plugins](https://plugins.gitbook.com) or create your own!
+GBook非常[可扩展](plugins/README.md)。您可以使用[现有插件](https://gbook.54dxs.cn/plugin)或创建您自己的插件！
