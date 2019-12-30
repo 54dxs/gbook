@@ -1,50 +1,50 @@
 # Summary
 
-### Getting Started
+### 入门
 
-* [About this documentation](README.md)
-* [Installation and Setup](setup.md)
+* [前言](README.md)
+* [安装和设置](setup.md)
 
-### Your Content
+### 你的内容
 
-* [Directory structure](structure.md)
-* [Pages and Summary](pages.md)
-* [Configuration](config.md)
+* [目录结构](structure.md)
+* [页面和摘要](pages.md)
+* [配置](config.md)
 * [Glossary](lexicon.md)
-* [Multi-Lingual](languages.md)
+* [多语言](languages.md)
 * [Markdown](syntax/markdown.md)
-    * [Headings](syntax/markdown.md#headings)
-    * [Paragraphs](syntax/markdown.md#paragraphs)
-    * [Lists](syntax/markdown.md#lists)
-    * [Links](syntax/markdown.md#links)
-    * [Images](syntax/markdown.md#images)
-    * [Blockquotes](syntax/markdown.md#blockquotes)
-    * [Tables](syntax/markdown.md#tables)
-    * [Code](syntax/markdown.md#code)
+    * [标题](syntax/markdown.md#headings)
+    * [段落](syntax/markdown.md#paragraphs)
+    * [列表](syntax/markdown.md#lists)
+    * [链接](syntax/markdown.md#links)
+    * [图片](syntax/markdown.md#images)
+    * [双引号](syntax/markdown.md#blockquotes)
+    * [表](syntax/markdown.md#tables)
+    * [代码](syntax/markdown.md#code)
     * [HTML](syntax/markdown.md#html)
-    * [Footnotes](syntax/markdown.md#footnotes)
+    * [脚注](syntax/markdown.md#footnotes)
 * [AsciiDoc](syntax/asciidoc.md)
-* [eBook and PDF](ebook.md)
+* [电子书和PDF](ebook.md)
 
-### Customization
+### 定制
 
-* [Templating](templating/README.md)
-    * [Content References](templating/conrefs.md)
-    * [Variables](templating/variables.md)
-    * [Builtin](templating/builtin.md)
-* [Plugins](plugins/README.md)
-    * [Create a plugin](plugins/create.md)
-    * [Hooks](plugins/hooks.md)
-    * [Blocks](plugins/blocks.md)
-    * [Filters](plugins/filters.md)
-    * [API & Context](plugins/api.md)
-    * [Test your plugin](plugins/testing.md)
-* [Theming](themes/README.md)
+* [模板](templating/README.md)
+    * [内容引用](templating/conrefs.md)
+    * [变量](templating/variables.md)
+    * [内置](templating/builtin.md)
+* [插件](plugins/README.md)
+    * [创建插件](plugins/create.md)
+    * [钩子](plugins/hooks.md)
+    * [块](plugins/blocks.md)
+    * [过滤器](plugins/filters.md)
+    * [API和上下文](plugins/api.md)
+    * [测试你的插件](plugins/testing.md)
+* [主题](themes/README.md)
 
 --
 
-* [FAQ](faq.md)
-* [Examples](examples.md)
-* [Release notes](https://github.com/GitbookIO/gitbook/blob/master/CHANGES.md)
+* [常见问题](faq.md)
+* [示例](examples.md)
+* [发行说明](https://github.com/GitbookIO/gitbook/blob/master/CHANGES.md)
 
 
