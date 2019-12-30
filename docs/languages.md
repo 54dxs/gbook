@@ -1,6 +1,6 @@
-# Multi-Languages
+# 多语言
 
-GitBook supports building books written in multiple languages. Each language should be a sub-directory following the normal GitBook format, and a file named `LANGS.md` should be present at the root of the repository with the following format:
+GBook支持构建用多种语言编写的书籍。每种语言都应该是遵循常规GBook格式的子目录，并且名为`LANGS.md`的文件应该以以下格式出现在存储库的根目录中：
 
 ```markdown
 # Languages
@@ -10,8 +10,8 @@ GitBook supports building books written in multiple languages. Each language sho
 * [Español](es/)
 ```
 
-### Configuration for each language
+### 每种语言的配置
 
-When a language book (ex: `en`) has a `book.json`, its configuration will extend the main configuration.
+当语言书（例如：`en`）有一个`book.json`，它的配置将扩展主配置。
 
-The only exception is plugins, plugins are specified globally, and language specific plugins cannot be specified.
+唯一的例外是插件，插件是全局指定的，不能指定语言特定的插件。
