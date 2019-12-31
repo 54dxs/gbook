@@ -1,41 +1,41 @@
-# Generating eBooks and PDFs
+# 生成电子书和PDF
 
-GitBook can generates a website, but can also output content as ebook (ePub, Mobi, PDF).
+GBook可以生成一个网站，但也可以将内容输出为电子书（ePub、Mobi、PDF）。
 
 ```
-# Generate a PDF file
-$ gitbook pdf ./ ./mybook.pdf
+# 生成PDF文件
+$ gbook pdf ./ ./mybook.pdf
 
-# Generate an ePub file
-$ gitbook epub ./ ./mybook.epub
+# 生成ePub文件
+$ gbook epub ./ ./mybook.epub
 
-# Generate a Mobi file
-$ gitbook mobi ./ ./mybook.mobi
+# 生成Mobi文件
+$ gbook mobi ./ ./mybook.mobi
 ```
 
-### Installing ebook-convert
+### 安装ebook-convert
 
-`ebook-convert` is required to generate ebooks (epub, mobi, pdf).
+`ebook-convert`是生成电子书（epub，mobi，pdf）所必需的。
 
-##### OS X
+##### 苹果操作系统
 
-Download the [Calibre application](https://calibre-ebook.com/download). After moving the `calibre.app` to your Applications folder create a symbolic link to the ebook-convert tool:
+下载[Calibre应用程序](https://calibre-ebook.com/download)。将`calibre.app`移动到“应用程序”文件夹后，创建指向ebook-convert工具的符号链接：
 
 ```
 $ sudo ln -s ~/Applications/calibre.app/Contents/MacOS/ebook-convert /usr/bin
 ```
 
-You can replace `/usr/bin` with any directory that is in your $PATH.
+您可以用$PATH中的任何目录替换`/usr/bin`。
 
-### Cover
+### 封面
 
-Covers are used for all the ebook formats. You can either provide one yourself, or generate one using the [autocover plugin](https://plugins.gitbook.com/plugin/autocover).
+所有电子书格式都使用封面。您可以自己提供一个插件，也可以使用[autocover plugin](https://gbook.54dxs.cn/plugin/autocover)生成一个。
 
-To provide a cover, place a **`cover.jpg`** file at the root directory of your book. Adding a **`cover_small.jpg`** will specify a smaller version of the cover. The cover should be a **JPEG** file.
+要提供封面，请将**`cover.jpg`**文件放在书本的根目录下。添加**`cover_small.jpg`**将指定封面的较小版本。封面应该是一个**JPEG**文件。
 
-A good cover should respect the following guidelines:
+好的封面应该遵循以下准则：
 
-* Size of 1800x2360 pixels for `cover.jpg`, 200x262 for `cover_small.jpg`
-* No border
-* Clearly visible book title
-* Any important text should be visible in the small version
+* `cover.jpg`的大小为1800x2360像素，`cover_small.jpg`的大小为200x262像素`
+* 没有边界
+* 清晰可见的书名
+* 任何重要的文本都应该在小版本中可见
