@@ -15,7 +15,7 @@ GBook使用一个`SUMMARY.md`文件来定义书籍章节和子章节的结构。
 
 * [第一部分](part1/README.md)
     * [写作很好](part1/writing.md)
-    * [GBook很不错](part1/gitbook.md)
+    * [GBook很不错](part1/gbook.md)
 * [第二部分](part2/README.md)
     * [我们喜欢反馈](part2/feedback_please.md)
     * [更好的作者工具](part2/better_tools.md)
@@ -35,7 +35,7 @@ GBook使用一个`SUMMARY.md`文件来定义书籍章节和子章节的结构。
 
 * [第一部分](part1/README.md)
     * [写作很好](part1/README.md#writing)
-    * [GBook很不错](part1/README.md#gitbook)
+    * [GBook很不错](part1/README.md#gbook)
 * [第二部分](part2/README.md)
     * [我们喜欢反馈](part2/README.md#feedback)
     * [更好的作者工具](part2/README.md#tools)
@@ -52,7 +52,7 @@ GBook使用一个`SUMMARY.md`文件来定义书籍章节和子章节的结构。
 ### 第一部分
 
 * [写作很好](part1/writing.md)
-* [GBook很不错](part1/gitbook.md)
+* [GBook很不错](part1/gbook.md)
 
 ### 第二部分
 

@@ -45,6 +45,6 @@
 
 * [常见问题](faq.md)
 * [示例](examples.md)
-* [发行说明](https://github.com/GitbookIO/gitbook/blob/master/CHANGES.md)
+* [发行说明](https://github.com/54dxs/gbook/blob/master/CHANGES.md)
 
 

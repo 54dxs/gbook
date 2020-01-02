@@ -69,7 +69,7 @@ $ npm publish
 ```
 {
     "plugins": [
-        "myplugin@git+https://github.com/MyCompany/mygitbookplugin.git#1.0.0"
+        "myplugin@git+https://github.com/MyCompany/mygbookplugin.git#1.0.0"
     ]
 }
 ```

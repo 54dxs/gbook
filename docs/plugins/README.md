@@ -21,7 +21,7 @@
 也可以使用 `"myPlugin@0.3.1"` 指定特定版本。默认情况下，GBook将解析插件兼容的最新版本与当前GBook版本。
 
 
-### GitBook.com网站
+### gbook.54dxs.cn网站
 
 在本地，运行 `gbook install` 来安装和准备书籍的所有插件。命令执行后将自动从[https://www.npmjs.com](https://www.npmjs.com/)下载到本地。
 

@@ -32,7 +32,7 @@
 {% endblock %}
 ```
 
-查看[API](https://github.com/GitbookIO/theme-api)主题以获得更完整的示例。
+查看[API](https://github.com/54dxs/theme-api)主题以获得更完整的示例。
 
 ### 发布主题
 

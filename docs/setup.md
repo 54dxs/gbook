@@ -51,7 +51,7 @@ $ gbook build
 
 ##### 安装预发行版
 
-`gitbook-cli` 可以轻松下载和安装GBook的其他版本，以便使用您的图书进行测试：
+`gbook-cli` 可以轻松下载和安装GBook的其他版本，以便使用您的图书进行测试：
 
 ```
 $ gbook fetch beta

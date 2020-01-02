@@ -15,7 +15,7 @@
 GBook还可以使用git解析include路径：
 
 ```
-{% include "git+https://github.com/GitbookIO/documentation.git/README.md#0.0.1" %}
+{% include "git+https://github.com/54dxs/documentation.git/README.md#0.0.1" %}
 ```
 
 git url的格式为：
