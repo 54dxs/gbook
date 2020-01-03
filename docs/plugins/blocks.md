@@ -1,12 +1,12 @@
-# Extend Blocks
+# 扩展块
 
-Extending templating blocks is the best way to provide extra functionalities to authors.
+扩展模板块是向作者提供额外功能的最佳方式。
 
-The most common usage is to process the content within some tags at runtime. It's like [filters](./filters.md), but on steroids because you aren't confined to a single expression.
+最常见的用法是在运行时在某些标记中处理内容。它类似于 [filters](./filters.md) ，但使用steroids是因为你不局限于一个表达式。
 
-### Defining a new block
+### 定义新块
 
-Blocks are defined by the plugin, blocks is a map of name associated with a block descriptor. The block descriptor needs to contain at least a `process` method.
+块由插件定义，块是与块描述符关联的名称映射。块描述符至少需要包含一个 `process` 方法。
 
 ```js
 module.exports = {
@@ -20,11 +20,11 @@ module.exports = {
 };
 ```
 
-The `process` should return the html content that will replace the tag. Refer to [Context and APIs](./api.md) to learn more about `this` and GitBook API.
+`process` 应该返回将替换标记的html内容。请参阅 [Context and APIs](./api.md) 以了解有关 `this` 和GBook api的更多信息。
 
-### Handling block arguments
+### 处理块参数
 
-Arguments can be passed to blocks:
+参数可以传递给块:
 
 ```
 {% tag1 "argument 1", "argument 2", name="Test" %}
@@ -32,7 +32,7 @@ This is the body of the block.
 {% endtag1 %}
 ```
 
-And arguments are easily accessible in the `process` method:
+在 `process` 方法中可以很容易地访问参数：
 
 ```js
 module.exports = {
@@ -47,9 +47,9 @@ module.exports = {
 };
 ```
 
-### Handling sub-blocks
+### 处理子块
 
-A defined block can be parsed into different sub-blocks, for example let's consider the source:
+定义的块可以解析为不同的子块，例如，让我们考虑源代码：
 
 ```
 {% myTag %}

@@ -1,88 +1,89 @@
-# Pages and Summary
+# Pages 和 Summary
 
 ### Summary
 
-GitBook uses a `SUMMARY.md` file to define the structure of chapters and subchapters of the book. The `SUMMARY.md` file is used to generate the book's table of contents.
+GBook使用一个`SUMMARY.md`文件来定义书籍章节和子章节的结构。`SUMMARY.md`文件用于生成书籍的目录。
 
-The format of `SUMMARY.md` is just a list of links. The link's title is used as the chapter's title, and the link's target is a path to that chapter's file.
+`SUMMARY.md`的格式只是一个链接列表。链接的标题用作章节的标题，链接的目标是指向该章节文件的路径。
 
-Adding a nested list to a parent chapter will create subchapters.
+将嵌套列表添加到父章将创建子章。
 
-##### Simple example
+##### 简单的例子
 
 ```markdown
 # Summary
 
-* [Part I](part1/README.md)
-    * [Writing is nice](part1/writing.md)
-    * [GitBook is nice](part1/gitbook.md)
-* [Part II](part2/README.md)
-    * [We love feedback](part2/feedback_please.md)
-    * [Better tools for authors](part2/better_tools.md)
+* [第一部分](part1/README.md)
+    * [写作很好](part1/writing.md)
+    * [GBook很不错](part1/gbook.md)
+* [第二部分](part2/README.md)
+    * [我们喜欢反馈](part2/feedback_please.md)
+    * [更好的作者工具](part2/better_tools.md)
 ```
 
-Each chapter has a dedicated page (`part#/README.md`) and is split into subchapters.
+每一章都有一个专门的页面(`part#/README.md`)，分为多个子章。
 
-##### Anchors
 
-Chapters in the Table of Contents can be pointing to specific part of a file using anchor.
+##### 锚
+
+目录中的章节可以使用锚定指向文件的特定部分。
 
 ```markdown
 # Summary
 
-### Part I
+### 第一部分
 
-* [Part I](part1/README.md)
-    * [Writing is nice](part1/README.md#writing)
-    * [GitBook is nice](part1/README.md#gitbook)
-* [Part II](part2/README.md)
-    * [We love feedback](part2/README.md#feedback)
-    * [Better tools for authors](part2/README.md#tools)
+* [第一部分](part1/README.md)
+    * [写作很好](part1/README.md#writing)
+    * [GBook很不错](part1/README.md#gbook)
+* [第二部分](part2/README.md)
+    * [我们喜欢反馈](part2/README.md#feedback)
+    * [更好的作者工具](part2/README.md#tools)
 ```
 
 
 ##### Parts
 
-The Table of Contents can be divided into parts separated by headings or horizontal lines:
+目录可以分成几个部分，用标题或横线隔开：
 
 ```markdown
 # Summary
 
-### Part I
+### 第一部分
 
-* [Writing is nice](part1/writing.md)
-* [GitBook is nice](part1/gitbook.md)
+* [写作很好](part1/writing.md)
+* [GBook很不错](part1/gbook.md)
 
-### Part II
+### 第二部分
 
-* [We love feedback](part2/feedback_please.md)
-* [Better tools for authors](part2/better_tools.md)
+* [我们喜欢反馈](part2/feedback_please.md)
+* [更好的作者工具](part2/better_tools.md)
 
 ----
 
-* [Last part without title](part3/title.md)
+* [无标题的最后一部分](part3/title.md)
 ```
 
-Parts are just groups of chapters and do not have dedicated pages, but according to the theme, it will show in the navigation.
+Parts只是一组章节，没有专门的页面，但是根据主题，它会在导航中显示出来。
 
 ### Pages
 
-#### Markdown syntax
+#### Markdown 语法
 
-Most of the files for GitBook use the Markdown syntax by default. GitBook infers your pages's structure from it. The syntax used is similar to the [GitHub Flavored Markdown syntax](https://guides.github.com/features/mastering-markdown/). One can also opt for the [AsciiDoc syntax](asciidoc.md).
+默认情况下，GBook的大多数文件都使用Markdown语法。GBook从中推断出页面的结构。使用的语法类似于[GitHub风格的Markdown语法](https://guides.github.com/features/mastering-markdown/)。也可以选择[AsciiDoc语法](asciidoc.md)。
 
-##### Example of a chapter file
+##### 章节文件示例
 
 ``` markdown
-# Title of the chapter
+# 本章标题
 
-This is a great introduction.
+这是一个很好的介绍。
 
-## Section 1
+## 第一节
 
 Markdown will dictates _most_ of your **book's structure**
 
-## Section 2
+## 第二节
 
 ...
 
@@ -90,15 +91,15 @@ Markdown will dictates _most_ of your **book's structure**
 
 #### Front Matter
 
-Pages can contain an optional front matter. It can be used to define the page's description. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
+页面可以包含可选的前端内容。它可以用来定义页面的描述。前面的内容必须是文件中的第一件事，并且必须采用三条虚线之间的有效YAML集的形式。下面是一个基本示例：
 
 ```yaml
 ---
-description: This is a short description of my page
+描述：这是我页面的简短描述
 ---
 
-# The content of my page
+# 我页面的内容
 ...
 ```
 
-The front matter can define variables of your own, they will be added to the [page variable](templating/variables.md) so you can use them in your templating.
+前面的内容可以定义自己的变量，它们将被添加到[页面变量](templating/variables.md)中，以便在模板中使用它们。

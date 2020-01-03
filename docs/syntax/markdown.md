@@ -1,20 +1,20 @@
 # Markdown
 
-Most of the examples from this documentation are in Markdown. Markdown is default parser for GitBook, but one can also opt for the [AsciiDoc syntax](asciidoc.md).
+本文档中的大多数示例都在Markdown中。Markdown是GBook的默认解析器，但也可以选择[AsciiDoc syntax](asciidoc.md)。
 
-Here’s an overview of Markdown syntax that you can use with GitBook (same as GitHub with some additions).
+这里概述了可以与GBook一起使用的标记语法（与GitHub中添加的语法相同）。
 
-### Headings
+### 标题
 
-To create a heading, add one to six `#` symbols before your heading text. The number of # you use will determine the size of the heading.
+要创建标题，请在标题文本前添加1到6个 `#` 符号。使用的#数量将决定标题的大小。
 
 ```markdown
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
+# 这是一个<h1>标记
+## 这是一个<h2>标记
+###### 这是一个<h6>标记
 ```
 
-GitBook supports a nice way for explicitly setting the header ID. If you follow the header text with an opening curly bracket (separated from the text with a least one space), a hash, the ID and a closing curly bracket, the ID is set on the header. If you use the trailing hash feature of atx style headers, the header ID has to go after the trailing hashes. For example:
+GBook支持一种很好的方式来显式地设置头ID。如果在头文本后面有一个开头的花括号（与至少有一个空格的文本分开）、哈希、ID和结尾的花括号，则在头上设置ID。如果使用atx样式头的尾部散列功能，则头ID必须在尾部散列之后。例如：
 
 ```markdown
 Hello {#id}
@@ -25,37 +25,39 @@ Hello {#id}
 # Hello # {#id}
 ```
 
-### Paragraphs and Line Breaks {#paragraphs}
+### 段落和换行符{#段落}
 
 A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank line is any line that looks like a blank line — a line containing nothing but spaces or tabs is considered blank.) Normal paragraphs should not be indented with spaces or tabs.
 
-```
-Here's a line for us to start with.
+段落只是一行或多行连续的文本，由一行或多行空行分隔。（空行是任何看起来像空行的行-除了空格或制表符以外什么都不包含的行被认为是空行。）普通段落不应缩进空格或制表符。
 
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+```
+这是我们的开场白。
+
+这一行与上面的一行用两个换行符隔开，所以它将是一个*单独的段落*。
 ```
 
-### Emphasis {#emphasis}
+### 强调{#强调}
 
 ```markdown
-*This text will be italic*
-_This will also be italic_
+*此文本将为斜体*
+_这也将是斜体_
 
-**This text will be bold**
-__This will also be bold__
+**此文本将为粗体**
+_这也将是粗体_
 
-~~This text will be crossed out.~~
+~~此文本将被删除~~
 
-_You **can** combine them_
+_你 **可以** 组合它们_
 ```
 
-### Lists {#lists}
+### 列表{#列表}
 
-Markdown supports ordered (numbered) and unordered (bulleted) lists.
+Markdown支持有序（编号）和无序（项目符号）列表。
 
-##### Unordered
+##### 无序的
 
-Unordered lists use asterisks, pluses, and hyphens — interchangably — as list markers:
+无序列表使用星号、加号和连字符（可替换）作为列表标记：
 
 ```markdown
 * Item 1
@@ -64,9 +66,9 @@ Unordered lists use asterisks, pluses, and hyphens — interchangably — as lis
   * Item 2b
 ```
 
-##### Ordered
+##### 有序的
 
-Ordered lists use numbers followed by periods:
+有序列表使用数字后跟句点：
 
 ```markdown
 1. Item 1
@@ -76,57 +78,59 @@ Ordered lists use numbers followed by periods:
    * Item 3b
 ```
 
-### Links {#links}
+### 链接{#链接}
 
-Markdown supports two style of links: inline and reference.
+Markdown支持两种链接样式：内联和引用。
 
-A simple link can be created by surrounding the text with square brackets and the link URL with parentheses:
-
-```markdown
-This is [an example](http://example.com/ "Title") inline link with a title.
-
-[This link](http://example.net/) has no title attribute.
-```
-
-Links can point to relative paths, anchors or absolute urls.
-
-
-### References
-
-There is another way to create links which does not interrupt the text flow. The URL and title are defined using a reference name and this reference name is then used in square brackets instead of the link URL:
+可以通过将文本用方括号括起来和链接URL用括号括起来来创建简单的链接：
 
 ```markdown
-This is [an example][id] reference-style link.
+这是带有标题的 [示例](http://example.com/ "Title") 内联链接
+
+[此链接](http://example.net/) 没有title属性
 ```
 
-Then, anywhere in the document, you define your link label like this, on a line by itself:
+链接可以指向相对路径、锚或绝对url。
+
+
+### 参考文献
+
+还有一种方法可以创建不中断文本流的链接。URL和标题是使用引用名称定义的，然后此引用名称在方括号中而不是链接URL中使用：
 
 ```markdown
-[id]: http://example.com/  "Optional Title Here"
+这是[示例][id]reference-style链接
 ```
 
-### Images {#images}
+然后，在文档中的任何位置，您都可以在一行上自行定义这样的链接标签：
 
-Images can be created in a similar way than links: just use an exclamation mark before the square brackets. The link text will become the alternative text of the image and the link URL specifies the image source:
+```markdown
+[id]: http://example.com/  "此处为可选标题"
+```
+
+### 图像{#图像}
+
+图像的创建方式与链接类似：只需在方括号前使用感叹号。链接文本将成为图像的可选文本，链接URL指定图像源：
 
 ```markdown
 An image: ![gras](img/image.jpg)
 ```
 
-### Blockquotes {#blockquotes}
+### 双引号{#双引号}
 
-A blockquote is started using the `>` marker followed by an optional space; all following lines that are also started with the blockquote marker belong to the blockquote. You can use any block-level elements inside a blockquote:
+一个blockquote是使用 `>` 标记和一个可选空格开始的；下面所有以blockquote标记开始的行都属于blockquote。可以在blockquote中使用任何块级元素：
 
 ```markdown
-As Kanye West said:
+正如坎耶·韦斯特所说：
 
-> We're living the future so
-> the present is our past.
+> 我们生活在未来，所以
+> 现在是我们的过去。
 ```
 
-### Tables {#tables}
+### 表格{#表格}
 
 You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
+
+可以通过组合单词列表并用连字符 `-`（第一行）分隔它们，然后用管道 `|` 分隔每一列来创建表：
 
 ```markdown
 | First Header  | Second Header |
@@ -135,34 +139,34 @@ You can create tables by assembling a list of words and dividing them with hyphe
 | Content Cell  | Content Cell  |
 ```
 
-The pipes on either end of the table are optional. Cells can vary in width and do not need to be perfectly aligned within columns. There must be at least three hyphens in each column of the header row.
+table两端的管道是可选的。单元格的宽度可以变化，不需要在列中完全对齐。标题行的每列中必须至少有三个连字符。
 
-### Code {#code}
+### 代码{#代码}
 
-Markdown supports two different code block styles. One uses lines indented with either four spaces or one tab whereas the other uses lines with tilde characters as delimiters – therefore the content does not need to be indented:
+标记支持两种不同的代码块样式。一个使用四个空格或一个制表符缩进的行，而另一个使用带颚化符的行作为分隔符，因此不需要缩进内容：
 
 ```markdown
-This is a sample code block.
+这是一个示例代码块。
 
-    Continued here.
+    在这里继续。
 
 ```
 
-##### Fenced code blocks
+##### 围栏代码块
 
-You can create fenced code blocks by placing triple backticks ` ``` ` before and after the code block. We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
+通过在代码块前后放置三个反勾号 ` ``` ` ，可以创建受保护的代码块。我们建议在代码块前后放置一个空行，以使原始格式更易于阅读。
 
     ```
     function test() {
-      console.log("notice the blank line before this function?");
+      console.log("注意这个函数之前的空白行？");
     }
     ```
 
-##### Syntax highlighting
+##### 语法突出显示
 
-You can add an optional language identifier to enable syntax highlighting in your fenced code block.
+您可以添加可选的语言标识符，以便在隔离代码块中启用语法突出显示。
 
-For example, to syntax highlight Ruby code:
+例如，要语法突出显示Ruby代码：
 
     ```ruby
     require 'redcarpet'
@@ -170,54 +174,54 @@ For example, to syntax highlight Ruby code:
     puts markdown.to_html
     ```
 
-##### Inline code
+##### 内联代码
 
-Text phrases can be marked up as code by surrounding them with backticks:
+文本短语可以标记为代码，方法是用反勾号包围它们：
 
-    Use `gitbook` to convert the `text` in markdown
-    syntax to HTML.
+    使用 `gbook` 转换标记中的 `text` 
+    HTML的语法。
 
-### Footnotes
+### 脚注
 
-GitBook supports a simple syntax for such footnotes. Footnotes are relative to each pages.
+GBook支持此类脚注的简单语法。脚注是相对于每一页的。
 
 ```markdown
-Text prior to footnote reference.[^2]
+脚注引用之前的文本.[^2]
 
-[^2]: Comment to include in footnote.
+[^2]: 要包含在脚注中的注释.
 ```
 
 ### HTML
 
-GitBook supports use of raw HTML in your text, Markdown syntax in HTML is not processed:
+GBook支持在文本中使用原始HTML，不处理HTML中的Markdown语法：
 
 ```
 <div>
-Markdown here will not be **parsed**
+此处的Markdown将不被**解析**
 </div>
 ```
 
-### Horizontal Rule
+### 水平尺
 
-Horizontal Rules can be inserted using three or more asterisks, dashes or underscores, optionally separated by spaces or tabs, on an otherwise blank line:
+水平规则可以使用三个或三个以上的星号、破折号或下划线（可选地用空格或制表符分隔）插入到空白行中：
 
 ```markdown
-Three or more...
+三个或更多...
 
 ---
 
-Hyphens
+连字符
 
 ***
 
-Asterisks
+星号
 
 ```
 
-### Ignoring Markdown formatting
+### 忽略标记格式
 
-You can tell GitBook to ignore (or escape) Markdown formatting by using `\` before the Markdown character.
+您可以告诉GBook忽略（或转义）标记格式，方法是在标记字符前使用 `\`。
 
 ```
-Let's rename \*our-new-project\* to \*our-old-project\*.
+让我们重命名 \*our-new-project\* 为 \*our-old-project\*.
 ```

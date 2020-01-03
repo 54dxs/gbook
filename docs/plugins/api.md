@@ -1,97 +1,97 @@
 # Context and APIs
 
-GitBooks provides different APIs and contexts to plugins. These APIs can vary according to the GitBook version being used, your plugin should specify the `engines.gitbook` field in `package.json` accordingly.
+GBooks为插件提供了不同的API和上下文。这些api可以根据使用的GBook版本而有所不同，插件应该相应地在 `package.json` 中指定 `engines.gbook` 字段。
 
-#### Book instance
+#### Book实例
 
-The `Book` class is the central point of GitBook, it centralize all access read methods. This class is defined in [book.js](https://github.com/GitbookIO/gitbook/blob/master/lib/book.js).
+`Book` 类是GBook的中心点，它集中了所有访问读取方法。这个类在[book.js](https://github.com/54dxs/gbook/blob/master/lib/book.js)中定义。
 
 ```js
-// Read configuration from book.json
+// 从book.json读取配置
 var value = book.config.get('title', 'Default Value');
 
-// Resolve a filename to an absolute path
+// 将文件名解析为绝对路径
 var filepath = book.resolve('README.md');
 
-// Render an inline markup string
+// 呈现内联标记字符串
 book.renderInline('markdown', 'This is **Markdown**')
     .then(function(str) { ... })
 
-// Render a markup string (block mode)
+// 呈现标记字符串（块模式）
 book.renderBlock('markdown', '* This is **Markdown**')
     .then(function(str) { ... })
 ```
 
-#### Output instance
+#### Output实例
 
-The `Output` class represent the output/write process.
+`Output` 类表示输出/写入进程。
 
 ```js
-// Return root folder for the output
+// 返回输出的根文件夹
 var root = output.root();
 
-// Resolve a file in the output folder
+// 解析输出文件夹中的文件
 var filepath = output.resolve('myimage.png');
 
-// Convert a filename to an URL (returns a path to an html file)
+// 将文件名转换为URL（返回html文件的路径）
 var fileurl = output.toURL('mychapter/README.md');
 
-// Write a file in the output folder
+// 在输出文件夹中写入文件
 output.writeFile('hello.txt', 'Hello World')
     .then(function() { ... });
 
-// Copy a file to the output folder
+// 将文件复制到输出文件夹
 output.copyFile('./myfile.jpg', 'cover.jpg')
     .then(function() { ... });
 
-// Verify that a file exists
+// 验证文件是否存在
 output.hasFile('hello.txt')
     .then(function(exists) { ... });
 ```
 
-#### Page instance
+#### Page实例
 
-A page instance represent the current parsed page.
+页实例表示当前解析的页。
 
 ```js
-// Title of the page (from SUMMARY)
+// 页面标题（摘自SUMMARY）
 page.title
 
-// Content of the page (Markdown/Asciidoc/HTML according to the stage)
+// 页面内容（根据阶段 Markdown/Asciidoc/HTML）
 page.content
 
-// Relative path in the book
+// 书中的相对路径
 page.path
 
-// Absolute path to the file
+// 文件的绝对路径
 page.rawPath
 
-// Type of parser used for this file
+// 用于此文件的分析器类型
 page.type ('markdown' or 'asciidoc')
 ```
 
-#### Context for Blocks and Filters
+#### Blocks和Filters的Context
 
-Blocks and filters have access to the same context, this context is bind to the template engine execution:
+块和筛选器可以访问同一上下文，此上下文绑定到模板引擎执行：
 
 ```js
 {
-    // Current templating syntax
+    // 当前模板语法
     "ctx": {
-        // For example, after a {% set message = "hello" %}
+        // 例如：在 {% set message = "hello" %} 之后
         "message": "hello"
     },
 
-    // Book instance
+    // Book实例
     "book" <Book>,
 
-    // Output instance
+    // Output 实例
     "output": <Output>
 }
 ```
 
-For example a filter or block function can access the current book using: `this.book`.
+例如，filter或block函数可以使用 `this.book` 访问当前book。
 
-#### Context for Hooks
+#### 钩子上下文
 
-Hooks only have access to the `<Book>` instance using `this.book`.
+钩子只能使用 `this.book` 访问 `<Book>` 实例。
