@@ -1,15 +1,16 @@
-# Plugins
+# 插件
 
-Plugins are the best way to extend GitBook functionalities (ebook and website). There exist plugins to do a lot of things: bring math formulas display support, track visits using Google Analytic, etc.
-
-### How to find plugins?
-
-Plugins can be easily searched on [plugins.gitbook.com](https://plugins.gitbook.com).
+插件是扩展GBook功能（电子书和网站）的最佳方式。存在插件做很多事情：带来数学公式显示支持，跟踪访问使用谷歌分析等。
 
 
-### How to install a plugin?
+### 如何找到插件？
 
-Once you find a plugin that you want to install, you need to add it to your `book.json`:
+插件可以在[https://www.npmjs.com](https://www.npmjs.com/)上轻松搜索。
+
+
+### 如何安装插件？
+
+找到要安装的插件后，需要将其添加到 "book.json" 中：
 
 ```
 {
@@ -17,12 +18,14 @@ Once you find a plugin that you want to install, you need to add it to your `boo
 }
 ```
 
-You can also specify a specific version using: `"myPlugin@0.3.1"`. By default GitBook will resolve the latest version of the plugin compatbile with the current GitBook version.
+也可以使用 `"myPlugin@0.3.1"` 指定特定版本。默认情况下，GBook将解析插件兼容的最新版本与当前GBook版本。
 
-### GitBook.com
 
-Plugins are automatically installed on [GitBook.com](https://www.gitbook.com). Locally, run `gitbook install` to install and prepare all plugins for your books.
+### gbook.54dxs.cn网站
 
-### Configuring plugins
+在本地，运行 `gbook install` 来安装和准备书籍的所有插件。命令执行后将自动从[https://www.npmjs.com](https://www.npmjs.com/)下载到本地。
 
-Plugins specific configurations are stored in `pluginsConfig`. You have to refer to the documentation of the plugin itself for details about the available options.
+
+### 配置插件
+
+特定于插件的配置存储在 `pluginsConfig` 中。有关可用选项的详细信息，请参阅插件本身的文档。

@@ -1,68 +1,64 @@
-Authors
+作者
 =======
 
-Also see https://github.com/GitbookIO/gitbook/graphs/contributors.
-Names below are ordered by first contribution.
-
-Author
+作者
 ------
 
-- Samy Pessé <samy@gitbook.com> (@SamyPesse)
-- Aaron O'Mullan <aaron@gitbook.com> (@AaronO)
-- Johan Preynat <johan@gitbook.com> (@jpreynat)
-- Nicolas Gaborit <nicolas@gitbook.com> (@soreine)
+- 深情小建 <374452668@qq.com> (@深情小建)
+- 深情小建 <374452668@qq.com> (@深情小建)
+- 深情小建 <374452668@qq.com> (@深情小建)
+- 深情小建 <374452668@qq.com> (@深情小建)
 
-Contributors
+贡献者
 ------------
 
-- Nijiko Yonskai (@Nijikokun)
-- Herman Starikov (@Hermanya)
+- 深情小建 <374452668@qq.com> (@深情小建)
+- 深情小建 <374452668@qq.com> (@深情小建)
 
-Translators
+翻译人员
 ------------
 
 - German
-    - Winnie (@winniehell)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Italian
-    - Giulio Bonanome (@gbonanome)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Russian
-    - Andrey Akinshin (@AndreyAkinshin)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Norwegian
-    - Knut Melvær (@kmelve)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Persian (Farsi)
-    - Mohammad Hossein Mojtahedi (@mhm5000)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Polish
-    - Łukasz Szeremeta (@lszeremeta)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Portuguese
-    - Ryan O'Mullan (@RyanOM)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Spanish
-    - Ryan O'Mullan (@RyanOM)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Simplifiled Chinese
-    - Hu Hao (@howiehu)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Traditional Chinese
-    - Hu Hao (@howiehu)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - French
-    - Samy Pessé (@SamyPesse)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Romanian
-        - Iancu Aurel (@awrelll)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Finnish
-    - Tommi Savikko (@savikko)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Japanese
-    - Iancu Aurel (@awrelll)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Korean
-    - Iancu Aurel (@awrelll)
-    - SangYeob Yu (@deminoth)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Vietnamese
-    - Hong Nguyen (@nghong)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Hebrew
-    - @a-moses
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Ukrainian
-    - @Karnaukhov
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Czech
-    - @mjanda
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Swedish
-    - Jacob Burenstam (@buren)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Turkish
-    - Turan Konan (@turankonan)
+    - 深情小建 <374452668@qq.com> (@深情小建)
 - Catalan
-    - Esaú García Sánchez-Torija (@egasato)
+    - 深情小建 <374452668@qq.com> (@深情小建)

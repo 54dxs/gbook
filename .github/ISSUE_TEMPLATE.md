@@ -1,19 +1,21 @@
-Thank you for giving us your feedback! We listed some guidelines to help you:
+谢谢你给我们反馈！我们列出了一些指导原则来帮助您：
 
-If possible, open separate issues for each bug report. Avoid grouping bugs that are unrelated.
+如果可能，为每个bug报告打开单独的问题。避免将无关的错误分组。
 
-### What is the current behavior?
+### 当前的行为是什么？
 
-If the current behavior is a bug, please provide the steps to reproduce. if possible, provide the GitBook version being used (`gitbook -V`) and the system infromations (OS and version).
+如果当前行为是一个bug，请提供复现步骤。如果可能，请提供正在使用的GBook版本 (`gbook -V`)和系统信息（操作系统及版本）。
 
-### What is the expected behavior?
 
-How do you think, or how would you like it should behave.
+### 预期的行为是什么？
 
-#### For GitBook.com
+你觉得怎么样，或者你希望它表现得怎么样。
 
-Provide, if possible, your username and the URL of the concerned book.
+
+#### 对于gbook.54dxs.cn
+
+如果可能，请提供您的用户名和相关书籍的URL。
 
 ----
 
-The GitBook Team
+GBook团队

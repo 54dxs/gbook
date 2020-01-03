@@ -1,27 +1,27 @@
-# Theming
+# 主题
 
-Since version 3.0.0, GitBook can be easily themed. Books use the [theme-default](https://github.com/GitbookIO/theme-default) theme by default.
+从3.0.0版本开始，GBook可以很容易地设置主题。默认情况下，书籍使用[主题默认值](https://github.com/54dxs/gbook-plugin-theme-default)主题。
 
-> **Caution**: Custom theming can block some plugins from working correctly.
+> **注意**：自定义主题可能会阻止某些插件正常工作。
 
-### Structure of a theme
+### 主题的结构
 
-A theme is a plugin containing templates and assets. Overriding any individual template is optional, since themes always extend the default theme.
+主题是包含模板和资源的插件。重写任何单个模板都是可选的，因为主题总是扩展默认主题。
 
-| Folder | Description |
+| 文件夹 | 说明 |
 | -------- | ----------- |
-| `_layouts` | Main folder containing all the templates |
-| `_layouts/website/page.html` | Template for a normal page |
-| `_layouts/ebook/page.html` | Template for a normal page during ebook generation (PDF< ePub, Mobi) |
+| `_layouts` | 包含所有模板的主文件夹 |
+| `_layouts/website/page.html` | 普通页面模板 |
+| `_layouts/ebook/page.html` | 生成电子书期间正常页面的模板 (PDF< ePub, Mobi) |
 
 
-### Extend/Customize theme in a book
+### 在书中扩展/自定义主题
 
-Authors can extend the templates of a theme directly from their book's source (without creating an external theme). Templates will be resolved in the `_layouts` folder of the book first, then in the installed plugins/themes.
+作者可以直接从书的源代码扩展主题的模板（无需创建外部主题）。模板将首先在书的`_layouts`文件夹中解析，然后在已安装的插件/主题中解析。
 
 ### Extend instead of Forking
 
-When you want to make your theme changes available to multiple books, instead of forking the default theme, you can extend it using the [templating syntax](../templating/README.md):
+如果要使主题更改对多本书可用，而不是派生默认主题，则可以使用[模板语法](../templating/README.md)对其进行扩展：
 
 ```html
 {% extends template.self %}
@@ -32,8 +32,8 @@ When you want to make your theme changes available to multiple books, instead of
 {% endblock %}
 ```
 
-Take a look at the [API](https://github.com/GitbookIO/theme-api) theme for a more complete example.
+查看[API](https://github.com/54dxs/theme-api)主题以获得更完整的示例。
 
-### Publish a theme
+### 发布主题
 
-Themes are published as plugins ([see related docs](../plugins/README.md)) with a `theme-` prefix. For example the theme `awesome` will be loaded from the `theme-awesome` plugin, and then from the `gitbook-plugin-theme-awesome` NPM package.
+主题以带有 `theme-` 前缀的插件([参见相关文档](../plugins/README.md))形式发布。例如，主题`awesome`将从`theme-awesome`插件加载，然后从`gbook-plugin-theme-awesome`NPM包加载。

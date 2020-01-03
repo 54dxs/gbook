@@ -1,31 +1,31 @@
-# Templating
+# 模板化
 
-GitBook uses the [Nunjucks templating language](https://mozilla.github.io/nunjucks/) to process pages and theme's templates.
+GBook使用[Nunjucks模板语言](https://mozilla.github.io/nunjucks/)来处理页面和主题的模板。
 
-The Nunjucks syntax is very similar to **Jinja2** or **Liquid**. Its syntax uses surrounding braces `{ }` to mark content that needs to be processed.
+Nunjucks语法与**Jinja2**或**Liquid**非常相似。它的语法使用括号`{ }`来标记需要处理的内容。
 
-### Variables
+### 变量
 
-A variable looks up a value from the template context. If you wanted to simply display a variable, you would use the `{{ variable }}` syntax. For example :
+变量从模板上下文中查找值。如果只想显示一个变量，可以使用`{{ variable }}`语法。例如：
 
 ```twig
-My name is {{ name }}, nice to meet you
+我叫{{ name }}，很高兴认识你
 ```
 
-This looks up username from the context and displays it. Variable names can have dots in them which lookup properties, just like JavaScript. You can also use the square bracket syntax.
+这将从上下文中查找用户名并显示它。变量名中可以有点来查找属性，就像JavaScript一样。也可以使用方括号语法。
 
 ```twig
 {{ foo.bar }}
 {{ foo["bar"] }}
 ```
 
-If a value is undefined, nothing is displayed. The following all output nothing if foo is undefined: `{{ foo }}`, `{{ foo.bar }}`, `{{ foo.bar.baz }}`.
+如果值未定义，则不显示任何内容。如果foo未定义，则以下所有输出都为空：`{{ foo }}`, `{{ foo.bar }}`, `{{ foo.bar.baz }}`。
 
-GitBook provides a set of [predefined  variables](variables.md) from the context.
+GBook从上下文中提供了一组[预定义变量](variables.md)。
 
-### Filters
+### 过滤器
 
-Filters are essentially functions that can be applied to variables. They are called with a pipe operator (`|`) and can take arguments.
+过滤器本质上是可以应用于变量的函数。它们是用管道运算符(`|`)调用的，可以接受参数。
 
 ```twig
 {{ foo | title }}
@@ -33,13 +33,13 @@ Filters are essentially functions that can be applied to variables. They are cal
 {{ foo | replace("foo", "bar") | capitalize }}
 ```
 
-The third example shows how you can chain filters. It would display "Bar", by first replacing "foo" with "bar" and then capitalizing it.
+第三个例子展示了如何链接过滤器。它将显示"Bar"，首先将"foo"替换为"bar"，然后将其大写。
 
 ### Tags
 
 ##### if
 
-`if` tests a condition and lets you selectively display content. It behaves exactly as JavaScript's `if` behaves.
+`if`测试条件并允许您有选择地显示内容。它的行为与JavaScript的`if`行为完全相同。
 
 ```twig
 {% if variable %}
@@ -47,9 +47,9 @@ The third example shows how you can chain filters. It would display "Bar", by fi
 {% endif %}
 ```
 
-If variable is defined and evaluates to true, "It is true" will be displayed. Otherwise, nothing will be.
+如果变量被定义并计算为true，则将显示"It is true"。否则，什么都不会。
 
-You can specify alternate conditions with `elif` and `else`:
+可以使用`elif`和`else`指定替代条件：
 
 ```twig
 {% if hungry %}
@@ -63,34 +63,34 @@ You can specify alternate conditions with `elif` and `else`:
 
 ##### for
 
-`for` iterates over arrays and dictionaries.
+`for` 遍历数组和字典.
 
 ```twig
-# Chapters about GitBook
+# 关于GBook的章节
 
-{% for article in glossary.terms['gitbook'].articles %}
+{% for article in glossary.terms['gbook'].articles %}
 * [{{ article.title }}]({{ article.path }})
 {% endfor %}
 ```
 
 ##### set
 
-`set` lets you create/modify a variable.
+`set` 允许您创建/修改变量.
 
 ```twig
 {% set softwareVersion = "1.0.0" %}
 
-Current version is {{ softwareVersion }}.
+当前版本是 {{ softwareVersion }}.
 [Download it](website.com/download/{{ softwareVersion }})
 ```
 
 ##### include and block
 
-Inclusion and inheritance is detailled in the [Content References](conrefs.md) section.
+包含和继承在[内容引用](conrefs.md)部分有详细说明
 
 ### Escaping
 
-If you want GitBook to ignore any of the special templating tags, you can use raw and anything inside of it will be output as plain text.
+如果希望GBook忽略任何特殊的模板标记，可以使用raw，其中的任何内容都将以纯文本输出。
 
 ``` twig
 {% raw %}

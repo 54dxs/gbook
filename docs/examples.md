@@ -1,29 +1,28 @@
 ---
-description: Real world examples of content published using GitBook.
+描述：使用GBook发布内容的真实示例。
 ---
 
-# Examples
+# 实例
 
-More than 50,000 books have been published on [GitBook.com](https://www.gitbook.com/explore).
+在[gbook.54dxs.cn](https://gbook.54dxs.cn/explore)上已经出版了50000多本书。
 
-### Books
+### 书籍
 
-- [Front-end Handbook](https://www.gitbook.com/book/frontendmasters/front-end-handbook/details) by [Cody Lindley](http://codylindley.com)
-- [How to make an Operating System](https://www.gitbook.com/book/samypesse/how-to-create-an-operating-system/details) by [@SamyPesse](https://github.com/SamyPesse)
-- [Building Web Apps with Go](https://www.gitbook.com/book/codegangsta/building-web-apps-with-go/details) by [@codegangsta](https://github.com/codegangsta)
-- [Django Girls Tutorial](http://tutorial.djangogirls.org/en/index.html) by [Django Girls](https://djangogirls.org)
-- [Linux Inside](https://www.gitbook.com/book/0xax/linux-insides/details) by [0xAX](https://twitter.com/0xAX)
-- [Learn Javascript](https://www.gitbook.com/book/gitbookio/javascript/details) by [GitBook](https://twitter.com/GitbookIO)
+-[前端手册](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[如何创建操作系统](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[使用Go构建Web应用程序](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[Django Girls教程](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[Linux内部](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[学习Javascript](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
 
-### Research Papers
+### 研究论文
 
-- [TowCenter Collection](https://www.gitbook.com/@towcenter) by [Columbia Journalism School](http://www.journalism.columbia.edu/)
-- [Block Relaxation Algorithms in Statistics](https://www.gitbook.com/@jandeleeuw) by Jan de Leeuw
+-[TowCenter Collection](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[统计中的块松弛算法](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
 
-### Documentation
+### 文件
 
-- [DuckDuckHack Documentation](http://docs.duckduckhack.com) by [DuckDuckGo](https://duckduckgo.com/about)
-- [Loomio Handbook](http://loomio.coop/) by [Loomio](https://www.loomio.org/)
-- [Enspiral Handbook](http://handbook.enspiral.com/) by [Enspiral](http://enspiral.com/)
-- This documentation
-
+-[DuckDuckHack文档](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[Loomio手册](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-[Enspiral手册](https://html.54dxs.cn) 作者[深情小建](http://github.com/lijian17)
+-本文件
