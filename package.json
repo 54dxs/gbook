@@ -1,6 +1,6 @@
 {
   "name": "gbook",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "https://gbook.54dxs.cn",
   "description": "使用gbook生成书籍和文档",
   "main": "lib/index.js",
