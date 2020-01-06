@@ -28,7 +28,7 @@
     "gbook-plugin-livereload": "1.0.0",
     "gbook-plugin-lunr": "1.0.0",
     "gbook-plugin-search": "1.0.1",
-    "gbook-plugin-sharing": "1.0.0",
+    "gbook-plugin-sharing": "1.0.1",
     "gbook-plugin-theme-default": "1.0.4",
     "github-slugid": "1.0.1",
     "graceful-fs": "4.1.4",
